@@ -10,15 +10,16 @@ def div(x):
 
 
 count = 0
-for i in range(1_500_001, 1_501_000):
+for i in range(1_500_001, 1_601_000):
     d = div(i)
     if len(d) == 0:
         continue
 
-    F = numpy.mean(d)
-    if type(F) != int:
-        continue
+    F = sum(d) // len(d)
+    
 
-    if str(F)[-1] == 9:
+    if str(F)[-1] == "9":
         print(i, F)
         count += 1
+        if count == 5:
+            break
