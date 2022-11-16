@@ -15,7 +15,7 @@ def F(n):
 #   if n < 1:
 #     return n + 2*n + 1
 #   else:
-#     return n + 2*n + 1 + 3*n - 8 + f(n-1) + f(n - 4)
+#     return n + 2*n + 1 + 3.py*n - 8 + f(n-1) + f(n - 4)
 # print(sum(str(f(28))))
 
 
