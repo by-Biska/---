@@ -1,0 +1,10 @@
+def f(c, end):
+    if c > end:
+        return 0
+    if c == end:
+        return 1
+    if c < end:
+        return f(c + 1, end) + f(c + 3, end) + f(c * 2, end)
+
+
+print(f(3, 9) * f(9, 12) * f(12,20))
