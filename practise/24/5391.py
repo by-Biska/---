@@ -1,0 +1,6 @@
+s = open('24-215.txt').readline()
+s = s.replace('B', 'A').replace('C', 'A').replace('2', '1').replace('3', '1')
+while 'A1A1A' in s: s = s.replace('A1A1A', 'A1A A1A')
+s = s.replace('A1A', '*')
+s = s.replace('A', ' ').replace('1', ' ')
+print(max(len(c) for c in s.split()))

@@ -1,0 +1,5 @@
+s = open('24.txt').readline()
+while 'DDD' in s: s = s.replace('DDD','DD DD')
+s = s.replace('DD', 'D D')
+print(s)
+print(max(len(c) for c in s.split() if c.count('FE')!=0))
